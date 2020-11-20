@@ -1,0 +1,24 @@
+﻿@using (Ajax.BeginForm(
+    "_SelectData",
+        new AjaxOptions {
+            UpdateTargetId = "data",
+            LoadingElementId = "loading",
+            LoadingElementDuration = 1000
+        }
+        )) {
+    <p>
+        Назва книги<br />
+        <input type="text" name="selName" />
+    </p>
+    <p>
+        Ким видано<br />
+        @Html.DropDownList("selAuthor", ViewBag.selAuthor as SelectList)
+    </p>
+        <p>
+        <input type="submit" value="Відібрати" />
+    </p>
+    <div id="loading" class="load" style="display:none">
+        <p>Завантаження даних...</p>
+    </div>
+}
+

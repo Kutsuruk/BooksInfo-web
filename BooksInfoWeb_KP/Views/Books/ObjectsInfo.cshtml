@@ -1,0 +1,30 @@
+﻿@*@model BooksInfo.Domain.Book*@
+@model IEnumerable<BooksInfo.Entities.BookGiving>
+
+@{
+    //ViewBag.Title = "ObjectsInfo";
+    ViewBag.Title = "Видача книг";
+}
+
+@*<h2>ObjectsInfo</h2>*@
+<h2>Видачі книг</h2>
+
+@foreach (var m in @Model)
+{
+    <div class="row panel">
+        <div class="col-xs-12">
+            <h3>
+                <strong>@m.BookName</strong>
+            </h3>
+            <strong class="lead">Клас @m.ClassName</strong><br />
+            <strong class="lead">Видано @m.DateGiving</strong><br />
+            @if(!string.IsNullOrEmpty(m.Note))
+            {
+                <strong class="lead">Опис:</strong><br />
+                @Html.Partial("_DescriptiveBlock", m.Note)
+            }
+        </div>
+        @Html.Action("_DescriptiveInfo", new { id = m.Id})
+    </div>
+}
+

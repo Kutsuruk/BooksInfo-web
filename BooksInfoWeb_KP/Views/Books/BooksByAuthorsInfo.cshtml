@@ -1,0 +1,30 @@
+﻿@model IEnumerable<BooksInfo.Entities.BookGiving>
+
+
+@{
+    ViewBag.Title = "BooksByAuthorsInfo";
+    Layout = "~/Views/Shared/_CategoryLayout.cshtml";
+}
+
+<h2>BooksByAuthorsInfo</h2>
+<h2>Видача книг</h2>
+
+@foreach (var m in @Model)
+{
+    <div class="row panel">
+        <div class="col-xs-12">
+            <h3>
+                <strong>@m.BookName</strong>
+            </h3>
+            @*<strong class="lead">Автор @m.Author</strong><br />*@
+            <strong class="lead">Клас @m.ClassName</strong><br />
+            <strong class="lead">Дата @m.DateGiving</strong><br />
+        </div>
+    </div>
+}
+
+
+@section NavMenu {
+    @Html.Action("BooksByAuthorsMenu", "Navigation",
+    new { categoryName = ViewBag.SelectedCategoryName })
+}

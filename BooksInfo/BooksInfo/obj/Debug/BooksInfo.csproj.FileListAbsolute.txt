@@ -1,0 +1,6 @@
+D:\Курсовий РТПЗ\new_Курсовий\ячс\BooksInfo\BooksInfo\bin\Debug\BooksInfo.pdb
+D:\Курсовий РТПЗ\new_Курсовий\ячс\BooksInfo\BooksInfo\obj\Debug\BooksInfo.csprojAssemblyReference.cache
+D:\Курсовий РТПЗ\new_Курсовий\ячс\BooksInfo\BooksInfo\obj\Debug\BooksInfo.csproj.CoreCompileInputs.cache
+D:\Курсовий РТПЗ\new_Курсовий\ячс\BooksInfo\BooksInfo\obj\Debug\BooksInfo.dll
+D:\Курсовий РТПЗ\new_Курсовий\ячс\BooksInfo\BooksInfo\obj\Debug\BooksInfo.pdb
+D:\Курсовий РТПЗ\new_Курсовий\ячс\BooksInfo\BooksInfo\obj\Debug\BooksInfo.csproj.CopyComplete

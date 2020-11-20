@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EntitiesList</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse"> 
+        <a class="navbar-brand hidden-xs" href="/">
+            ПО "Підручники": Інформація про підручники та авторів
+        </a>
+        <a class="navbar-brand visible-xs" href="/">ПО "Підручники"</a>
+    </div>
+    <div class="row panel">
+        @Html.ActionLink("Підручники та автори", "Index", "Books", null,
+       new { @class="btn btn-block btn-default btn-lg"})
+        @Html.ActionLink("Клас та час видачі", "Index", "Authors", null,
+       new { @class="btn btn-block btn-default btn-lg"})
+    </div>
+</body>
+</html>

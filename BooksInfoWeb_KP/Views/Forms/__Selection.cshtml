@@ -1,0 +1,17 @@
+﻿@model IEnumerable<BooksInfoWeb_KP.Models.BookTableModel>
+
+@{
+    ViewBag.Title = "Selection";
+}
+
+@*<h2>Selection</h2>*@
+<h2>Видача книг</h2>
+
+<table class="table">
+    <thead>
+        @Html.Partial("_TableHead", @Model)
+    </thead>
+    <tbody>
+        @Html.Partial("_TableBody", @Model)
+    </tbody>
+</table>

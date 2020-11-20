@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksInfoWeb_KP", "BooksInfoWeb_KP\BooksInfoWeb_KP.csproj", "{A7A0AACF-077C-4C8D-AF0D-D1048F782391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksInfo", "BooksInfo\BooksInfo\BooksInfo.csproj", "{FE60EAF2-52D0-41F0-90F3-010B407666DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7A0AACF-077C-4C8D-AF0D-D1048F782391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A0AACF-077C-4C8D-AF0D-D1048F782391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A0AACF-077C-4C8D-AF0D-D1048F782391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A0AACF-077C-4C8D-AF0D-D1048F782391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE60EAF2-52D0-41F0-90F3-010B407666DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE60EAF2-52D0-41F0-90F3-010B407666DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE60EAF2-52D0-41F0-90F3-010B407666DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE60EAF2-52D0-41F0-90F3-010B407666DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB362ABF-D2F8-496A-9D6D-8EF6E205B21F}
+	EndGlobalSection
+EndGlobal

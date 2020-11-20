@@ -1,0 +1,16 @@
+﻿@model IEnumerable<BooksInfoWeb_KP.Models.BookTableModel>
+
+@foreach (var m in @Model) {
+    <div class="row panel">
+        <div class="col-xs-12">
+            <h3>
+                <strong>@m.BookName</strong>
+            </h3>
+            <strong class="lead">Клас: @m.ClassName</strong><br />
+            <strong class="lead">Автор підручника: @m.Author</strong><br />
+            <strong class="lead">Дата видачі: @m.DateGiving </strong><br />
+        </div>
+    </div>
+}
+
+

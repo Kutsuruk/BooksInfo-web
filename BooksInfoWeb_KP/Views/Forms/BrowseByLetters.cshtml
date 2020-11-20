@@ -1,0 +1,34 @@
+﻿@using BooksInfoWeb_KP.Controllers
+@model IEnumerable<BooksInfoWeb_KP.Models.BookTableModel>
+
+@{
+    ViewBag.Title = "BrowseByLetters";
+}
+
+@*<h2>BrowseByLetters</h2>*@
+<h2>Видача підручників</h2>
+
+<div class="ajaxLink">
+    @foreach (string letter in @ViewBag.Letters as IEnumerable<string>) {
+        @Ajax.ActionLink(
+            letter,
+            "_GetDataByLetter",
+            new { selLetter = letter },
+            new AjaxOptions {
+                UpdateTargetId = "data",
+                LoadingElementId = "loading",
+                LoadingElementDuration = 1000
+            },
+            new { @class = "btn btn-default" }
+        )
+    }
+</div>
+<div id="loading" class="load" style="display:none">
+    <p>Завантаження даних...</p>
+</div>
+
+<div id="data">
+    @Html.Action("_GetDataByLetter",
+        new { selLetter = @FormsController.ALL_PAGE_LINK_NAME })
+</div>
+

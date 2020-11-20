@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Опис ПО "Підручники"</h2>
+
+<ul>
+    <li>
+        @Html.ActionLink("Редактор предметної області", "Index", "BooksCrud",
+       null, new { @class = "btn btn-link" })
+    </li>
+
+    <li>
+        @Html.ActionLink("Перегляд інформації про видачу книг", "ObjectsInfo", "Books",
+       null, new { @class = "btn btn-link" })
+    </li>
+
+    <li>
+        @Html.ActionLink("Перегляд інформації про видачу книг з навігацією", "BooksByAuthorsInfo", "Books",
+       null, new { @class = "btn btn-link" })
+    </li>
+
+    <li>
+        @Html.ActionLink("Перегляд та пошук інформації з використанням асинхронної форми", "Selection", "Forms",
+       null, new { @class = "btn btn-link" })
+    </li>
+
+    <li>
+        @Html.ActionLink("Перегляд та пошук інформації з використанням AJAX форми", "BrowseByLetters", "Forms",
+       null, new { @class = "btn btn-link" })
+    </li>
+
+</ul>

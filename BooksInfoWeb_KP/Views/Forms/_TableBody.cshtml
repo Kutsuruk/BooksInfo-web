@@ -1,0 +1,19 @@
+﻿@model IEnumerable<BooksInfoWeb_KP.Models.BookTableModel>
+
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Author)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateGiving)
+        </td>
+    </tr>
+}

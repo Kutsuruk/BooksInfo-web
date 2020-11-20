@@ -1,0 +1,19 @@
+﻿@model IEnumerable<string>
+
+<h3>Видача</h3>
+
+@foreach (var link in Model)
+{
+    @Html.RouteLink(
+        link.Length < 20 ? link : link.Substring(0, 17) + "...",
+        new {
+            controller = "Books",
+            action = "BooksByAuthorsInfo",
+            categoryName = link
+        },
+        new {
+            @class = "btn btn-block btn-default btn-lg btn-nav_menu"
+                + (link == ViewBag.SelectedCategoryName ? " btn-primary" : "")
+        })
+}
+
